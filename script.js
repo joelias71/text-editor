@@ -25,3 +25,12 @@ function makeUnderline(elem) {
     }
 
 }
+
+function alignText(elem, alignType) {
+    document.getElementById('text-output').style.textAlign = alignType
+    let btnList = document.getElementsByClassName('align')
+    for(btn of btnList) {
+        btn.classList.remove('active')
+    }
+    elem.classList.add('active')
+}
